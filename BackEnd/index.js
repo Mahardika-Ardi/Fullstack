@@ -4,7 +4,7 @@ import cors from "cors";
 import usersRoutes from "./routes/users.routes.js";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
@@ -15,4 +15,4 @@ app.use(
 );
 app.use(express.json());
 app.use("/Users", usersRoutes);
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
