@@ -13,7 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://register-three-beryl.vercel.app/",
+      "https://project-login-signup.vercel.app",
     ],
     methods: ["POST", "PUT", "DELETE", "GET"],
     allowedHeaders: ["Content-Type", "Authorization"],
