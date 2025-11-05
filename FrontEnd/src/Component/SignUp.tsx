@@ -16,7 +16,7 @@ export default function SignUp() {
     setError("");
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/Users/SignUp`, {
+      const res = await fetch(`https://backed.up.railway.app/Users/SignUp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
