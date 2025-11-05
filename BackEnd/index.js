@@ -11,7 +11,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "https://register-three-beryl.vercel.app",
+    origin: [
+      "http://localhost:5173",
+      "https://register-three-beryl.vercel.app/",
+    ],
     methods: ["POST", "PUT", "DELETE", "GET"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
